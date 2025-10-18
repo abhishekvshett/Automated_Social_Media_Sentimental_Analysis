@@ -1,85 +1,99 @@
-🎯 Automated Social Media Sentiment Analysis 
+# 🎯 Automated Social Media Sentiment Analysis (YouTube Comments)
 
-<br>
-🧠 Overview
+## 🧠 Overview
+This project performs **sentiment analysis on YouTube comments** using a **BERT-based Deep Learning model**.  
+It fetches comments from a video via the **YouTube Data API**, analyzes each comment’s sentiment, and visualizes the overall sentiment distribution through an **interactive Streamlit dashboard**.
 
-This project performs sentiment analysis on YouTube/Twitter comments using a BERT-based Deep Learning model.
-It fetches comments from a video via the YouTube Data API, analyzes each comment’s sentiment, and visualizes the overall sentiment distribution through an interactive Streamlit dashboard.
+The system helps creators, brands, and analysts monitor **viewer emotions** and **brand perception** efficiently.
 
-The system helps creators, brands, and analysts monitor viewer emotions and brand perception efficiently.
-<br>
-<hr>
-🚀 Features <br>
+---
 
-✅ Fetches YouTube comments in real time using the YouTube Data API <br>
-✅ Converts UTC timestamps to IST for Indian time-based trend visualization <br>
-✅ Uses BERT (nlptown/bert-base-multilingual-uncased-sentiment) for multilingual sentiment detection <br>
+## 🚀 Features
+✅ Fetches YouTube comments in real time using the **YouTube Data API**  
+✅ Converts **UTC timestamps to IST** for Indian time-based trend visualization  
+✅ Uses **BERT (nlptown/bert-base-multilingual-uncased-sentiment)** for multilingual sentiment detection  
 ✅ Generates:
+- 📊 **Bar Chart** → Frequency of sentiment types  
+- 📈 **Line Chart** → Sentiment change over time  
+- 🕐 **Hourly Sentiment Trend**  
+- 🥧 **Pie Chart** → Sentiment proportion  
+✅ Builds a **Word Cloud** of most common words  
+✅ Fully interactive dashboard using **Streamlit** and **Plotly**
 
-   📊 Bar Chart → Frequency of sentiment types
+---
 
-   📈 Line Chart → Sentiment change over time
+## 🧰 Tech Stack
+| Component | Technology |
+|------------|-------------|
+| **Frontend** | Streamlit |
+| **Backend** | Python |
+| **Machine Learning Model** | BERT (Hugging Face Transformers) |
+| **Visualization** | Plotly, Matplotlib, WordCloud |
+| **Data Source** | YouTube Data API |
+| **Libraries** | `transformers`, `torch`, `googleapiclient`, `pandas`, `plotly`, `streamlit`, `matplotlib`, `wordcloud` |
 
-   🕐 Hourly Sentiment Trend
+---
 
-   🥧 Pie Chart → Sentiment proportion
-   <br>
+## ⚙️ How It Works
 
-   
-   ✅ Builds a Word Cloud of most common words
-<br>
-   
-   ✅ Fully interactive dashboard using Streamlit and Plotly
-<br>
-<hr>
-🧰 Tech Stack <br>
-Component--->	Technology <br>
-Frontend--->	Streamlit <br>
-Backend -->	Python <br>
-Machine Learning Model--->	BERT (Hugging Face Transformers) <br>
-Visualization--->	Plotly, Matplotlib, WordCloud 
-<br>
-<hr>
+### 1. Fetch YouTube Comments  
+- The app uses `googleapiclient.discovery` to fetch top-level comments using a **YouTube video ID** and **API key**.  
+- Comments, author names, timestamps, and like counts are stored in a DataFrame.
 
+### 2. Preprocess & Convert Time  
+- Converts timestamps from **UTC → Indian Standard Time (IST)** using `pytz`.
 
-⚙️ How It Works
+### 3. Sentiment Classification  
+- Uses the pre-trained **BERT model** (`nlptown/bert-base-multilingual-uncased-sentiment`) to classify each comment into one of five categories:  
+  | Score | Sentiment |
+  |--------|------------|
+  | 1 | Awful |
+  | 2 | Bad |
+  | 3 | Neutral |
+  | 4 | Good |
+  | 5 | Excellent |
 
-<br>
-<br>
-1. Fetch YouTube Comments
+### 4. Visualization Dashboard  
+- Interactive Streamlit dashboard displaying:
+  - Sentiment-wise comment distribution  
+  - Word cloud of most used words  
+  - Sentiment trends over **time** and **hour of day**  
+  - Proportion of positive, neutral, and negative comments  
 
-    The app uses googleapiclient.discovery to fetch top-level comments using a YouTube video ID and API key.
+---
 
-    Comments, author names, timestamps, and like counts are stored in a DataFrame.
+## 🧪 How to Run the Project
 
-2. Preprocess & Convert Time
+### 🔧 Step 1: Clone the Repository
+```bash
+git clone https://github.com/yourusername/social-media-sentiment-analysis.git
+cd social-media-sentiment-analysis  
+```
+###🔧 Step 2: Install Dependencies
 
-    Converts timestamps from UTC → Indian Standard Time (IST) using pytz.
+    pip install -r requirements.txt
 
-3. Sentiment Classification
+### 🗝️ Step 3: Get YouTube API Key
 
-    Uses the pre-trained BERT model (nlptown/bert-base-multilingual-uncased-sentiment) to classify each comment into one of five categories:
+ -Visit Google Cloud Console
 
-Score	Sentiment
-<br>
-    1	Awful <br>
-    2	Bad <br>
-    3	Neutral <br>
-    4	Good <br>
-    5	Excellent <br>
+ -Enable YouTube Data API v3
+
+ -Generate an API key
+
+ -Paste it into the Streamlit input field when prompted
+
+### ▶️ Step 4: Run the Streamlit App
+
+    streamlit run app.py
     
-4. Visualization Dashboard
+### 🧭 Step 5: Enter Details in the Web App
 
-    Interactive Streamlit dashboard displaying:
+ -Input your YouTube video ID (from the video URL)
 
-    Sentiment-wise comment distribution
+-Example:
+ -For https://www.youtube.com/watch?v=abcd1234, the ID is abcd1234
 
-    Word cloud of most used words
+ -Enter your YouTube API Key
 
-    Sentiment trends over time and hour of day
-
-    Proportion of positive, neutral, and negative comments
-
-  <br>
-
-
+ -Click "Analyse Comments"
