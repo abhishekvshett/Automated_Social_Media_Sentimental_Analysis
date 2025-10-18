@@ -23,7 +23,12 @@ The system helps creators, brands, and analysts monitor viewer emotions and bran
    🕐 Hourly Sentiment Trend
 
    🥧 Pie Chart → Sentiment proportion
+   <br>
+
+   
    ✅ Builds a Word Cloud of most common words
+<br>
+   
    ✅ Fully interactive dashboard using Streamlit and Plotly
 <br>
 <hr>
@@ -35,40 +40,45 @@ Machine Learning Model--->	BERT (Hugging Face Transformers) <br>
 Visualization--->	Plotly, Matplotlib, WordCloud 
 <br>
 <hr>
+
+
 ⚙️ How It Works
+
+<br>
 <br>
 1. Fetch YouTube Comments
 
-  The app uses googleapiclient.discovery to fetch top-level comments using a YouTube video ID and API key.
+    The app uses googleapiclient.discovery to fetch top-level comments using a YouTube video ID and API key.
 
-  Comments, author names, timestamps, and like counts are stored in a DataFrame.
+    Comments, author names, timestamps, and like counts are stored in a DataFrame.
 
 2. Preprocess & Convert Time
 
-  Converts timestamps from UTC → Indian Standard Time (IST) using pytz.
+    Converts timestamps from UTC → Indian Standard Time (IST) using pytz.
 
 3. Sentiment Classification
 
-  Uses the pre-trained BERT model (nlptown/bert-base-multilingual-uncased-sentiment) to classify each comment into one of five categories:
+    Uses the pre-trained BERT model (nlptown/bert-base-multilingual-uncased-sentiment) to classify each comment into one of five categories:
 
 Score	Sentiment
-    1	Awful
-    2	Bad
-    3	Neutral
-    4	Good
-    5	Excellent
+<br>
+    1	Awful <br>
+    2	Bad <br>
+    3	Neutral <br>
+    4	Good <br>
+    5	Excellent <br>
     
 4. Visualization Dashboard
 
-  Interactive Streamlit dashboard displaying:
+    Interactive Streamlit dashboard displaying:
 
-  Sentiment-wise comment distribution
+    Sentiment-wise comment distribution
 
-  Word cloud of most used words
+    Word cloud of most used words
 
-  Sentiment trends over time and hour of day
+    Sentiment trends over time and hour of day
 
-  Proportion of positive, neutral, and negative comments
+    Proportion of positive, neutral, and negative comments
 
   <br>
 
