@@ -100,20 +100,36 @@ cd social-media-sentiment-analysis
 
  ---
 
- 📸 Screenshots
+ ## 📸 Screenshots
 
  <img width="1900" height="1008" alt="Screenshot 2025-10-17 141158" src="https://github.com/user-attachments/assets/d3833bfe-e6fe-4782-9407-884a5c803368" />
+ 
  ---
+ 
  <img width="1906" height="970" alt="Screenshot 2025-10-18 101433" src="https://github.com/user-attachments/assets/21d1bd19-1a74-4760-bc3c-ed6ac6249f3a" />
+ 
  ---
  
  <img width="1916" height="776" alt="Screenshot 2025-10-18 101453" src="https://github.com/user-attachments/assets/4d97c9e5-047f-448a-ae7e-111fbb06c323" />
 
  ---
- <img width="1162" height="770" alt="Screenshot 2025-10-18 101520" src="https://github.com/user-attachments/assets/5fe896ad-8018-4448-a70e-5fff2e6807f3" /> | <img width="1910" height="856" alt="Screenshot 2025-10-18 101549" src="https://github.com/user-attachments/assets/fa2878f3-54fe-4093-bae0-e9421bd5f205" />
+ <img width="1162" height="770" alt="Screenshot 2025-10-18 101520" src="https://github.com/user-attachments/assets/5fe896ad-8018-4448-a70e-5fff2e6807f3" /> 
 
  ---
  
+ <img width="1910" height="856" alt="Screenshot 2025-10-18 101549" src="https://github.com/user-attachments/assets/fa2878f3-54fe-4093-bae0-e9421bd5f205" />
+
+ ---
+ 
+<img width="1169" height="761" alt="Screenshot 2025-10-18 101746" src="https://github.com/user-attachments/assets/6570b2a7-c6f2-4772-a0e2-0f6a0c7a8093" /> 
+
+---
+
+<img width="1902" height="957" alt="Screenshot 2025-10-18 101801" src="https://github.com/user-attachments/assets/60c1be89-a20b-44e5-9b42-79a36f2191bc" />
+
+---
+
+
 
 
 
