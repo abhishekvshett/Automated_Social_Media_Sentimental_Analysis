@@ -9,11 +9,11 @@ It fetches comments from a video via the YouTube Data API, analyzes each comment
 The system helps creators, brands, and analysts monitor viewer emotions and brand perception efficiently.
 <br>
 <hr>
-🚀 Features
+🚀 Features <br>
 
-✅ Fetches YouTube comments in real time using the YouTube Data API
-✅ Converts UTC timestamps to IST for Indian time-based trend visualization
-✅ Uses BERT (nlptown/bert-base-multilingual-uncased-sentiment) for multilingual sentiment detection
+✅ Fetches YouTube comments in real time using the YouTube Data API <br>
+✅ Converts UTC timestamps to IST for Indian time-based trend visualization <br>
+✅ Uses BERT (nlptown/bert-base-multilingual-uncased-sentiment) for multilingual sentiment detection <br>
 ✅ Generates:
 
    📊 Bar Chart → Frequency of sentiment types
@@ -27,15 +27,16 @@ The system helps creators, brands, and analysts monitor viewer emotions and bran
    ✅ Fully interactive dashboard using Streamlit and Plotly
 <br>
 <hr>
-🧰 Tech Stack
-Component--->	Technology
-Frontend--->	Streamlit
-Backend -->	Python
-Machine Learning Model--->	BERT (Hugging Face Transformers)
-Visualization--->	Plotly, Matplotlib, WordCloud
+🧰 Tech Stack <br>
+Component--->	Technology <br>
+Frontend--->	Streamlit <br>
+Backend -->	Python <br>
+Machine Learning Model--->	BERT (Hugging Face Transformers) <br>
+Visualization--->	Plotly, Matplotlib, WordCloud 
 <br>
 <hr>
 ⚙️ How It Works
+<br>
 1. Fetch YouTube Comments
 
   The app uses googleapiclient.discovery to fetch top-level comments using a YouTube video ID and API key.
@@ -68,5 +69,7 @@ Score	Sentiment
   Sentiment trends over time and hour of day
 
   Proportion of positive, neutral, and negative comments
+
+  <br>
 
 
